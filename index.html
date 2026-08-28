@@ -1,0 +1,1795 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AVM Academy & Library, Kareli</title>
+  <meta name="description" content="AVM Academy & Library, Kareli — Study With Purpose. Prepare With Confidence. PCM Coaching, NDA Preparation, Competitive Exam Guidance, AC & Non-AC Study Hall." />
+  <meta property="og:title" content="AVM Academy & Library, Kareli" />
+  <meta property="og:description" content="Interactive demo website for AVM Academy & Library in Kareli with PCM coaching, NDA prep, and AC/Non-AC study halls." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- Discreet Demo Website Badge -->
+  <div class="demo-corner-badge" id="demoCornerBadge">DEMO PREVIEW</div>
+
+  <!-- 1. ANNOUNCEMENT BAR -->
+  <div class="announcement-bar" id="announcementBar">
+    <div class="announcement-container">
+      <div class="announcement-text">
+        <span class="highlight-pulse"></span>
+        <span>Admissions & Study Seat Enquiries Open — Contact AVM Academy & Library</span>
+      </div>
+      <a href="#" class="announcement-link js-open-enquiry-modal" data-course="General Enquiry" id="announcementEnquireLink">
+        Enquire Now &rarr;
+      </a>
+    </div>
+  </div>
+
+  <!-- 2. STICKY NAVBAR -->
+  <header class="navbar" id="mainNavbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" id="navLogo">
+        <div class="logo-badge">
+          AVM
+          <span>KARELI</span>
+        </div>
+        <div class="logo-text-group">
+          <span class="logo-title">AVM ACADEMY</span>
+          <span class="logo-subtitle">& LIBRARY</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="navDesktopMenu">
+          <li class="nav-item"><a href="#hero">Home</a></li>
+          <li class="nav-item"><a href="#about">About</a></li>
+          <li class="nav-item"><a href="#courses">Courses</a></li>
+          <li class="nav-item"><a href="#library">Library</a></li>
+          <li class="nav-item"><a href="#facilities">Facilities</a></li>
+          <li class="nav-item"><a href="#results">Results</a></li>
+          <li class="nav-item"><a href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a href="#reviews">Reviews</a></li>
+          <li class="nav-item"><a href="#faq">FAQ</a></li>
+          <li class="nav-item"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-cta-group">
+        <button class="btn btn-accent btn-sm js-open-seat-modal" id="navBookSeatBtn">
+          Book a Seat
+        </button>
+        <button class="hamburger-btn" id="hamburgerBtn" aria-label="Toggle Navigation Menu">
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer & Backdrop -->
+  <div class="mobile-nav-backdrop" id="mobileNavBackdrop"></div>
+  <aside class="mobile-nav-drawer" id="mobileNavDrawer">
+    <div>
+      <div style="margin-bottom: 1.5rem; display: flex; align-items: center; gap: 0.75rem;">
+        <div class="logo-badge" style="width: 38px; height: 38px; font-size: 0.95rem;">AVM</div>
+        <div>
+          <strong style="display:block; color: var(--primary); font-size: 1rem;">AVM Academy</strong>
+          <small style="color: var(--accent); font-weight: 600;">& Library, Kareli</small>
+        </div>
+      </div>
+      <ul class="mobile-menu-list">
+        <li class="mobile-menu-item"><a href="#hero">Home</a></li>
+        <li class="mobile-menu-item"><a href="#about">About Academy</a></li>
+        <li class="mobile-menu-item"><a href="#why-avm">Why Choose AVM</a></li>
+        <li class="mobile-menu-item"><a href="#courses">Courses</a></li>
+        <li class="mobile-menu-item"><a href="#library">Library / Study Hall</a></li>
+        <li class="mobile-menu-item"><a href="#facilities">Facilities</a></li>
+        <li class="mobile-menu-item"><a href="#results">Achievements</a></li>
+        <li class="mobile-menu-item"><a href="#stories">Success Stories</a></li>
+        <li class="mobile-menu-item"><a href="#gallery">Photo Gallery</a></li>
+        <li class="mobile-menu-item"><a href="#faculty">Faculty</a></li>
+        <li class="mobile-menu-item"><a href="#story">Academy Story</a></li>
+        <li class="mobile-menu-item"><a href="#faq">FAQ</a></li>
+        <li class="mobile-menu-item"><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1.5rem;">
+      <button class="btn btn-accent btn-full js-open-seat-modal">Book a Study Seat</button>
+      <button class="btn btn-primary btn-full js-open-enquiry-modal">Course Enquiry</button>
+    </div>
+  </aside>
+
+  <!-- 3. HERO SECTION -->
+  <section class="hero-section" id="hero">
+    <img 
+      src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1920&q=80" 
+      alt="Indian students studying and preparing for competitive exams" 
+      class="hero-bg-image" 
+    />
+    <div class="hero-overlay"></div>
+    <div class="section-container">
+      <div class="hero-content fade-in-element">
+        <div class="hero-pre-badge">
+          Kareli's Premier Learning & Study Space
+        </div>
+        <h1 class="hero-title">
+          AVM ACADEMY <span class="title-accent">& LIBRARY</span>
+        </h1>
+        <p class="hero-tagline">
+          Study With Purpose. Prepare With Confidence.
+        </p>
+        <p class="hero-supporting-text">
+          PCM Coaching • NDA Preparation • Competitive Exam Guidance • AC & Non-AC Study Hall
+        </p>
+        <div class="hero-cta-group">
+          <a href="#courses" class="btn btn-accent btn-lg" id="heroExploreCoursesBtn">
+            Explore Courses
+          </a>
+          <button class="btn btn-outline-white btn-lg js-open-seat-modal" id="heroBookSeatBtn">
+            Book a Study Seat
+          </button>
+          <a href="tel:+919876543210" class="btn btn-call btn-lg js-phone-link" id="heroCallBtn">
+            Call Now
+          </a>
+          <a href="#" class="btn btn-whatsapp btn-lg js-whatsapp-link" id="heroWhatsAppBtn">
+            WhatsApp
+          </a>
+        </div>
+        <div class="hero-trust-strip">
+          <div class="hero-trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            Class 11 & 12 PCM
+          </div>
+          <div class="hero-trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            NDA Preparation
+          </div>
+          <div class="hero-trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            AC Study Hall
+          </div>
+          <div class="hero-trust-badge">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+            High-Speed Wi-Fi
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. TRUST / SERVICES STRIP (5 Cards) -->
+  <section class="services-strip-section" id="services-strip">
+    <div class="section-container">
+      <div class="services-strip-grid">
+        <div class="service-strip-card fade-in-element">
+          <div class="service-strip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path><path d="M6 6h10"></path><path d="M6 10h10"></path></svg>
+          </div>
+          <h3 class="service-strip-title">PCM Coaching</h3>
+          <p class="service-strip-desc">Class 11 & 12</p>
+        </div>
+
+        <div class="service-strip-card fade-in-element">
+          <div class="service-strip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <h3 class="service-strip-title">NDA Preparation</h3>
+          <p class="service-strip-desc">Focused Exam Preparation</p>
+        </div>
+
+        <div class="service-strip-card fade-in-element">
+          <div class="service-strip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+          </div>
+          <h3 class="service-strip-title">AC Study Hall</h3>
+          <p class="service-strip-desc">Quiet Self-Study</p>
+        </div>
+
+        <div class="service-strip-card fade-in-element">
+          <div class="service-strip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+          </div>
+          <h3 class="service-strip-title">Non-AC Study Hall</h3>
+          <p class="service-strip-desc">Budget-Friendly Study Space</p>
+        </div>
+
+        <div class="service-strip-card fade-in-element">
+          <div class="service-strip-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+          </div>
+          <h3 class="service-strip-title">High-Speed Wi-Fi</h3>
+          <p class="service-strip-desc">Digital Learning Support</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. ABOUT SECTION -->
+  <section class="about-section" id="about">
+    <div class="section-container">
+      <div class="about-grid">
+        <div class="about-visual fade-in-element">
+          <div class="about-image-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1000&q=80" 
+              alt="AVM Academy classroom mentor guiding students" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="about-experience-card">
+            <div class="experience-number">100%</div>
+            <div class="experience-label">Dedicated Study & Mentorship Atmosphere</div>
+          </div>
+        </div>
+
+        <div class="about-content fade-in-element">
+          <span class="section-tag">About Academy</span>
+          <h2 class="section-title">More Than A Coaching Centre</h2>
+          <p class="about-lead">
+            AVM Academy & Library, Kareli is designed around a simple idea: Give students the right guidance, the right resources and the right environment to study seriously.
+          </p>
+          <p class="about-body-text">
+            Whether preparing for Board examinations, national defense academy entries, or civil and competitive goals, structured guidance paired with an undisturbed study sanctuary makes all the difference. We integrate disciplined academic tutoring with modern study amenities.
+          </p>
+
+          <ul class="about-checklist">
+            <li class="about-checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Academic Coaching</span>
+            </li>
+            <li class="about-checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Competitive Preparation</span>
+            </li>
+            <li class="about-checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Dedicated Study Spaces</span>
+            </li>
+            <li class="about-checklist-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Books & Reference Material</span>
+            </li>
+            <li class="about-checklist-item" style="grid-column: span 2;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              <span>Digital Learning Support</span>
+            </li>
+          </ul>
+
+          <div class="about-cta-group">
+            <a href="#why-avm" class="btn btn-primary">Explore AVM</a>
+            <a href="#contact" class="btn btn-outline">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. WHY CHOOSE AVM (8 Cards) -->
+  <section class="why-choose-section" id="why-avm">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Key Advantages</span>
+        <h2 class="section-title">Why Choose AVM</h2>
+        <p class="section-subtitle">
+          Everything an ambitious student needs to eliminate distractions and build unbroken academic momentum.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <h3 class="why-card-title">1. Focused Learning Environment</h3>
+          <p class="why-card-desc">A peaceful, distraction-free environment engineered solely for intense concentration and study.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><polyline points="16 11 18 13 22 9"></polyline></svg>
+          </div>
+          <h3 class="why-card-title">2. Experienced Guidance</h3>
+          <p class="why-card-desc">Mentors dedicated to simplifying complex concepts and structuring personalized study routines.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+          </div>
+          <h3 class="why-card-title">3. AC Study Hall</h3>
+          <p class="why-card-desc">Temperature-controlled study rooms designed for long, comfortable hours of daily preparation.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><path d="M3 9h18"></path><path d="M9 21V9"></path></svg>
+          </div>
+          <h3 class="why-card-title">4. Non-AC Study Hall</h3>
+          <p class="why-card-desc">Budget-friendly, naturally ventilated seating offering quiet and peaceful study desks.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12.55a11 11 0 0 1 14.08 0"></path><path d="M1.42 9a16 16 0 0 1 21.16 0"></path><path d="M8.53 16.11a6 6 0 0 1 6.95 0"></path><line x1="12" y1="20" x2="12.01" y2="20"></line></svg>
+          </div>
+          <h3 class="why-card-title">5. High-Speed Wi-Fi</h3>
+          <p class="why-card-desc">Seamless connectivity for downloading study materials, watching lectures, and research.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1-2.5-2.5Z"></path></svg>
+          </div>
+          <h3 class="why-card-title">6. Books & Study Material</h3>
+          <p class="why-card-desc">Curated reference books, question banks, and competitive exam modules available on-site.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="16" height="12" x="4" y="4" rx="2"></rect><line x1="8" y1="20" x2="8" y2="16"></line><line x1="16" y1="20" x2="16" y2="16"></line><line x1="4" y1="16" x2="20" y2="16"></line></svg>
+          </div>
+          <h3 class="why-card-title">7. Comfortable Seating</h3>
+          <p class="why-card-desc">Ergonomically designed chairs and spacious desks reducing physical fatigue during study marathons.</p>
+        </div>
+
+        <div class="why-card fade-in-element">
+          <div class="why-icon-box">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect width="18" height="18" x="3" y="3" rx="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+          </div>
+          <h3 class="why-card-title">8. Dedicated Study Space</h3>
+          <p class="why-card-desc">Individual partitioned desks giving every student personal privacy and focus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. COURSES SECTION -->
+  <section class="courses-section" id="courses">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Academic & Competitive Programs</span>
+        <h2 class="section-title">Courses at AVM</h2>
+        <p class="section-subtitle">
+          Comprehensive curriculum coverage and rigorous exam coaching led by focused educators in Kareli.
+        </p>
+      </div>
+
+      <div class="courses-grid">
+        <!-- Class 11 PCM -->
+        <div class="course-card fade-in-element">
+          <div class="course-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" 
+              alt="Class 11 PCM Physics Chemistry Mathematics study" 
+              loading="lazy" 
+            />
+            <span class="course-category-tag">Board & Foundation</span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">CLASS 11 PCM</h3>
+            <ul class="course-subjects-list">
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Physics
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Chemistry
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mathematics
+              </li>
+            </ul>
+            <div class="course-card-footer">
+              <button class="btn btn-primary btn-full js-open-enquiry-modal" data-course="Class 11 PCM">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Class 12 PCM -->
+        <div class="course-card fade-in-element">
+          <span class="popular-badge">Popular</span>
+          <div class="course-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" 
+              alt="Class 12 PCM Board Exam Preparation" 
+              loading="lazy" 
+            />
+            <span class="course-category-tag">Board Mastery</span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">CLASS 12 PCM</h3>
+            <ul class="course-subjects-list">
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Physics
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Chemistry
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mathematics
+              </li>
+            </ul>
+            <div class="course-card-footer">
+              <button class="btn btn-primary btn-full js-open-enquiry-modal" data-course="Class 12 PCM">
+                Enquire Now
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- NDA Preparation -->
+        <div class="course-card fade-in-element">
+          <span class="popular-badge">Popular</span>
+          <div class="course-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=800&q=80" 
+              alt="NDA Defence Exam Preparation Batch" 
+              loading="lazy" 
+            />
+            <span class="course-category-tag">Defence Entry</span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">NDA PREPARATION</h3>
+            <ul class="course-subjects-list">
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Mathematics
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                General preparation
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Practice
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Exam-oriented guidance
+              </li>
+            </ul>
+            <div class="course-card-footer">
+              <button class="btn btn-accent btn-full js-open-enquiry-modal" data-course="NDA Preparation">
+                Explore NDA
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Competitive Exam Guidance -->
+        <div class="course-card fade-in-element">
+          <div class="course-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=800&q=80" 
+              alt="Competitive Exam Guidance and Strategy" 
+              loading="lazy" 
+            />
+            <span class="course-category-tag">Aptitude & Strategy</span>
+          </div>
+          <div class="course-content">
+            <h3 class="course-title">COMPETITIVE EXAMS</h3>
+            <ul class="course-subjects-list">
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Basic preparation
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                General aptitude foundation
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Study strategy
+              </li>
+              <li class="course-subject-item">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Self-study support
+              </li>
+            </ul>
+            <div class="course-card-footer">
+              <button class="btn btn-outline btn-full js-open-enquiry-modal" data-course="Competitive Exam Guidance">
+                Ask About Preparation
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8. LIBRARY / STUDY HALL SECTION -->
+  <section class="library-section" id="library">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag" style="background: rgba(245, 158, 11, 0.2); color: #FEF3C7;">Self-Study Sanctuaries</span>
+        <h2 class="section-title">A Better Place To Study</h2>
+        <p class="section-subtitle">
+          Because where you study matters.
+        </p>
+      </div>
+
+      <div class="library-grid">
+        <!-- AC Study Hall -->
+        <div class="study-hall-card fade-in-element">
+          <div class="hall-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1000&q=80" 
+              alt="Air Conditioned modern study hall at AVM Academy" 
+              loading="lazy" 
+            />
+            <span class="hall-badge">Climate Controlled</span>
+          </div>
+          <div class="hall-content">
+            <h3 class="hall-title">AC STUDY HALL</h3>
+            <p class="hall-desc">
+              Premium air-conditioned reading room built for serious learners who require long hours of peaceful uninterrupted focus.
+            </p>
+            <ul class="hall-features-list">
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Air-conditioned environment
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Quiet study atmosphere
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Comfortable seating
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Dedicated desks/cabins
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Suitable for long study sessions
+              </li>
+            </ul>
+            <div class="hall-footer">
+              <button class="btn btn-accent btn-lg btn-full js-open-seat-modal" data-hall="AC">
+                Book AC Seat
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Non-AC Study Hall -->
+        <div class="study-hall-card fade-in-element">
+          <div class="hall-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?auto=format&fit=crop&w=1000&q=80" 
+              alt="Quiet Non-AC reading hall and library space" 
+              loading="lazy" 
+            />
+            <span class="hall-badge" style="background-color: var(--secondary);">Budget Friendly</span>
+          </div>
+          <div class="hall-content">
+            <h3 class="hall-title">NON-AC STUDY HALL</h3>
+            <p class="hall-desc">
+              Economical and spacious study hall equipped with ample natural airflow, personal power sockets, and disciplined silence.
+            </p>
+            <ul class="hall-features-list">
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Budget-friendly option
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Quiet environment
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Comfortable seating
+              </li>
+              <li class="hall-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                Dedicated study space
+              </li>
+            </ul>
+            <div class="hall-footer">
+              <button class="btn btn-outline-white btn-lg btn-full js-open-seat-modal" data-hall="Non-AC">
+                Book Non-AC Seat
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9. FACILITIES SECTION -->
+  <section class="facilities-section" id="facilities">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Campus Amenities</span>
+        <h2 class="section-title">Facilities at AVM</h2>
+        <p class="section-subtitle">
+          Designed specifically to keep you alert, comfortable, and productive during long preparation cycles.
+        </p>
+      </div>
+
+      <div class="facilities-grid">
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1568667256549-094345857637?auto=format&fit=crop&w=600&q=80" 
+              alt="Air-Conditioned Study Hall" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">Air-Conditioned Study Hall</h3>
+            <p class="facility-desc">Quiet and comfortable study environment.</p>
+          </div>
+        </div>
+
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=600&q=80" 
+              alt="Non-AC Study Hall" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">Non-AC Study Hall</h3>
+            <p class="facility-desc">Affordable focused study space.</p>
+          </div>
+        </div>
+
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=600&q=80" 
+              alt="High-Speed Wi-Fi internet" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">High-Speed Wi-Fi</h3>
+            <p class="facility-desc">Useful for online lectures and digital notes.</p>
+          </div>
+        </div>
+
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1495446815901-a7297e633e8d?auto=format&fit=crop&w=600&q=80" 
+              alt="Book Collection and references" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">Book Collection</h3>
+            <p class="facility-desc">Competitive exam and reference material.</p>
+          </div>
+        </div>
+
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=600&q=80" 
+              alt="Comfortable Seating chairs and desks" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">Comfortable Seating</h3>
+            <p class="facility-desc">Designed for longer study sessions.</p>
+          </div>
+        </div>
+
+        <div class="facility-card fade-in-element">
+          <div class="facility-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=600&q=80" 
+              alt="Dedicated Desk Cabin" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="facility-body">
+            <h3 class="facility-title">Dedicated Desk / Cabin</h3>
+            <p class="facility-desc">Better concentration and fewer distractions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 10. STUDENT JOURNEY -->
+  <section class="journey-section" id="journey">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">How It Works</span>
+        <h2 class="section-title">Student Journey</h2>
+        <p class="section-subtitle">
+          A seamless 4-step path to starting your academic or competitive exam journey at AVM.
+        </p>
+      </div>
+
+      <div class="journey-grid">
+        <div class="journey-step-card fade-in-element">
+          <div class="journey-step-number">01</div>
+          <h3 class="journey-step-title">Choose Your Goal</h3>
+          <p class="journey-step-desc">Identify your target academic level, Board syllabus, or competitive defence examination.</p>
+        </div>
+
+        <div class="journey-step-card fade-in-element">
+          <div class="journey-step-number">02</div>
+          <h3 class="journey-step-title">Select Your Course</h3>
+          <p class="journey-step-desc">Pick from Class 11/12 PCM coaching, NDA batch, or a dedicated library study membership.</p>
+        </div>
+
+        <div class="journey-step-card fade-in-element">
+          <div class="journey-step-number">03</div>
+          <h3 class="journey-step-title">Enquire / Book Your Seat</h3>
+          <p class="journey-step-desc">Fill our simple enquiry form or reserve your AC/Non-AC cabin study desk.</p>
+        </div>
+
+        <div class="journey-step-card fade-in-element">
+          <div class="journey-step-number">04</div>
+          <h3 class="journey-step-title">Start Preparing</h3>
+          <p class="journey-step-desc">Attend structured batches, access study material, and cultivate a daily high-focus routine.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11. RESULTS / ACHIEVEMENTS -->
+  <section class="results-section" id="results">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Student Milestones</span>
+        <h2 class="section-title">Every Goal Has A Beginning</h2>
+        <p class="section-subtitle">
+          Cultivating consistent habits, conceptual mastery, and disciplined exam preparation in Kareli.
+        </p>
+      </div>
+
+      <div class="results-grid">
+        <div class="achievement-card fade-in-element">
+          <div class="achievement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.45 1-1 1H7c-.55 0-1-.45-1-1v-2.34"></path><path d="M18 14.66V17c0 .55-.45 1-1 1h-2c-.55 0-1-.45-1-1v-2.34"></path><path d="M14 9V5a2 2 0 0 0-2-2 2 2 0 0 0-2 2v4"></path></svg>
+          </div>
+          <div class="achievement-category">NDA Preparation</div>
+          <h3 class="achievement-title">Demo Achievement</h3>
+          <p class="achievement-desc">Rigorous written practice tests and aptitude problem solving milestones.</p>
+        </div>
+
+        <div class="achievement-card fade-in-element">
+          <div class="achievement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c3 3 9 3 12 0v-5"></path></svg>
+          </div>
+          <div class="achievement-category">PCM Academic Progress</div>
+          <h3 class="achievement-title">Demo Achievement</h3>
+          <p class="achievement-desc">Deep subject clarity in Physics, Chemistry, and Mathematics for senior students.</p>
+        </div>
+
+        <div class="achievement-card fade-in-element">
+          <div class="achievement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+          </div>
+          <div class="achievement-category">Competitive Exam Preparation</div>
+          <h3 class="achievement-title">Demo Achievement</h3>
+          <p class="achievement-desc">Long self-study marathons and steady mock test score progressions.</p>
+        </div>
+
+        <div class="achievement-card fade-in-element">
+          <div class="achievement-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+          </div>
+          <div class="achievement-category">Student Milestone</div>
+          <h3 class="achievement-title">Demo Achievement</h3>
+          <p class="achievement-desc">Building unbroken daily discipline and confidence through structured guidance.</p>
+        </div>
+      </div>
+
+      <div class="demo-disclaimer-box fade-in-element">
+        <strong>Notice:</strong> Demo content — replace with verified AVM student achievements.
+      </div>
+    </div>
+  </section>
+
+  <!-- 12. SUCCESS STORIES -->
+  <section class="stories-section" id="stories">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Student Experiences</span>
+        <h2 class="section-title">Student Success Stories</h2>
+        <p class="section-subtitle">
+          How AVM's guided batches and silent study spaces support learners every day.
+        </p>
+      </div>
+
+      <div class="stories-grid">
+        <div class="story-card fade-in-element">
+          <div class="story-header">
+            <img 
+              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=300&q=80" 
+              alt="Rahul Demo Student" 
+              class="story-avatar" 
+              loading="lazy" 
+            />
+            <div>
+              <div class="story-student-name">Rahul — Demo Student</div>
+              <div class="story-student-goal">Class 12 PCM</div>
+            </div>
+          </div>
+          <p class="story-quote">
+            "AVM helped me create a more disciplined study routine and stay focused on my preparation."
+          </p>
+          <div class="story-footer">
+            <span class="demo-pill">DEMO STUDENT STORY</span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Kareli</span>
+          </div>
+        </div>
+
+        <div class="story-card fade-in-element">
+          <div class="story-header">
+            <img 
+              src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80" 
+              alt="Aman Demo Student" 
+              class="story-avatar" 
+              loading="lazy" 
+            />
+            <div>
+              <div class="story-student-name">Aman — Demo Student</div>
+              <div class="story-student-goal">NDA Aspirant</div>
+            </div>
+          </div>
+          <p class="story-quote">
+            "I needed a focused environment for preparation and regular self-study."
+          </p>
+          <div class="story-footer">
+            <span class="demo-pill">DEMO STUDENT STORY</span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Kareli</span>
+          </div>
+        </div>
+
+        <div class="story-card fade-in-element">
+          <div class="story-header">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=300&q=80" 
+              alt="Priya Demo Student" 
+              class="story-avatar" 
+              loading="lazy" 
+            />
+            <div>
+              <div class="story-student-name">Priya — Demo Student</div>
+              <div class="story-student-goal">Competitive Exam Aspirant</div>
+            </div>
+          </div>
+          <p class="story-quote">
+            "The dedicated study space helped me maintain consistency."
+          </p>
+          <div class="story-footer">
+            <span class="demo-pill">DEMO STUDENT STORY</span>
+            <span style="font-size: 0.75rem; color: var(--text-muted);">Kareli</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 13. REVIEWS SLIDER -->
+  <section class="reviews-section" id="reviews">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Testimonials</span>
+        <h2 class="section-title">What Students Say</h2>
+        <p class="section-subtitle">
+          Real feedback on our silent study atmosphere, mentorship, and library resources.
+        </p>
+      </div>
+
+      <div class="review-slider-wrapper fade-in-element">
+        <div class="review-slider-track" id="reviewSliderTrack">
+          <!-- Slide 1 -->
+          <div class="review-slide">
+            <div class="review-card-inner">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The AC study hall provides the quiet atmosphere I couldn't find at home. High-speed internet and uninterrupted power make study sessions super productive."
+              </p>
+              <div class="review-author">Ankit Verma</div>
+              <div class="review-course-tag">Class 12 Board Student</div>
+              <span class="demo-pill">DEMO REVIEW</span>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="review-slide">
+            <div class="review-card-inner">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "AVM's NDA preparation mentorship cleared all my doubts in mathematics and helped me manage mock tests with better time accuracy."
+              </p>
+              <div class="review-author">Saurabh Sharma</div>
+              <div class="review-course-tag">NDA Aspirant</div>
+              <span class="demo-pill">DEMO REVIEW</span>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="review-slide">
+            <div class="review-card-inner">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "The personal cabins and comfortable seating allowed me to study for 7–8 hours every single day without feeling exhausted. Best library space in Kareli."
+              </p>
+              <div class="review-author">Neha Patel</div>
+              <div class="review-course-tag">Competitive Exam Aspirant</div>
+              <span class="demo-pill">DEMO REVIEW</span>
+            </div>
+          </div>
+
+          <!-- Slide 4 -->
+          <div class="review-slide">
+            <div class="review-card-inner">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Teachers here focus on fundamentals first before rushing into complex formulas. Physics numerical problems became much simpler for me."
+              </p>
+              <div class="review-author">Rohan Mehra</div>
+              <div class="review-course-tag">Class 11 PCM Batch</div>
+              <span class="demo-pill">DEMO REVIEW</span>
+            </div>
+          </div>
+
+          <!-- Slide 5 -->
+          <div class="review-slide">
+            <div class="review-card-inner">
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Great environment, clean drinking water, supportive staff, and dedicated reference books. Exactly what serious students need."
+              </p>
+              <div class="review-author">Vikas Dubey</div>
+              <div class="review-course-tag">Self Study Library Member</div>
+              <span class="demo-pill">DEMO REVIEW</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider-controls">
+          <button class="slider-arrow-btn" id="reviewPrevBtn" aria-label="Previous Review">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <div class="slider-dots" id="reviewSliderDots"></div>
+          <button class="slider-arrow-btn" id="reviewNextBtn" aria-label="Next Review">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14. PHOTO GALLERY -->
+  <section class="gallery-section" id="gallery">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Campus Life</span>
+        <h2 class="section-title">Photo Gallery</h2>
+        <p class="section-subtitle">
+          Explore our classrooms, study cabins, library rows, and vibrant student community.
+        </p>
+      </div>
+
+      <!-- Filters -->
+      <div class="gallery-filters fade-in-element">
+        <button class="gallery-filter-btn is-active" data-filter="all">All</button>
+        <button class="gallery-filter-btn" data-filter="classroom">Classroom</button>
+        <button class="gallery-filter-btn" data-filter="library">Library</button>
+        <button class="gallery-filter-btn" data-filter="students">Students</button>
+        <button class="gallery-filter-btn" data-filter="studyspace">Study Space</button>
+        <button class="gallery-filter-btn" data-filter="activities">Activities</button>
+      </div>
+
+      <!-- Gallery Grid (12 curated photos) -->
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item fade-in-element" data-category="classroom" data-title="Modern Interactive Coaching Classroom">
+          <img src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=800&q=80" alt="Classroom lecture at AVM" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Classroom Lecture</div>
+            <div class="gallery-caption-cat">Classroom</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="library" data-title="Quiet Library Stacks & Reading Desks">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" alt="Library at AVM" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Silent Reading Hall</div>
+            <div class="gallery-caption-cat">Library</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="students" data-title="Students Preparing For Competitive Examinations">
+          <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80" alt="Students studying together" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Peer Study Session</div>
+            <div class="gallery-caption-cat">Students</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="studyspace" data-title="Individual Partitioned Study Cabins">
+          <img src="https://images.unsplash.com/photo-1498243691581-b145c3f54a5a?auto=format&fit=crop&w=800&q=80" alt="Study cabin space" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Dedicated Study Cabin</div>
+            <div class="gallery-caption-cat">Study Space</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="classroom" data-title="Concept Clarification with Faculty Mentor">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" alt="Teacher mentor teaching" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Faculty Mentorship</div>
+            <div class="gallery-caption-cat">Classroom</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="library" data-title="Extensive Reference and Exam Books">
+          <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=800&q=80" alt="Reference books and shelves" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Reference Book Section</div>
+            <div class="gallery-caption-cat">Library</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="students" data-title="Deep Concentration During Self Study Hours">
+          <img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=800&q=80" alt="Student concentrating on calculations" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Examination Prep</div>
+            <div class="gallery-caption-cat">Students</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="studyspace" data-title="Spacious Desks with Adequate Lighting">
+          <img src="https://images.unsplash.com/photo-1427504494785-3a9ca7044f45?auto=format&fit=crop&w=800&q=80" alt="Desk study setting" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Spacious Study Desk</div>
+            <div class="gallery-caption-cat">Study Space</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="activities" data-title="Doubt Clearing and Practice Discussion Group">
+          <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" alt="Group discussion" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Doubt Solving Workshop</div>
+            <div class="gallery-caption-cat">Activities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="classroom" data-title="Mathematics and Physics Problem Solving Session">
+          <img src="https://images.unsplash.com/photo-1546410531-bb4caa6b424d?auto=format&fit=crop&w=800&q=80" alt="Mathematics board class" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Numerical Practice</div>
+            <div class="gallery-caption-cat">Classroom</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="activities" data-title="Periodic Mock Examination Testing">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" alt="Students writing test" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Mock Test Series</div>
+            <div class="gallery-caption-cat">Activities</div>
+          </div>
+        </div>
+
+        <div class="gallery-item fade-in-element" data-category="students" data-title="Daily Routine and Note Taking">
+          <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&fit=crop&w=800&q=80" alt="Note making student" loading="lazy" />
+          <div class="gallery-overlay">
+            <div class="gallery-caption-title">Daily Revision</div>
+            <div class="gallery-caption-cat">Students</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fullscreen Lightbox Modal -->
+  <div class="lightbox-modal" id="galleryLightbox" role="dialog" aria-modal="true">
+    <div class="lightbox-wrapper">
+      <button class="lightbox-close-btn" id="lightboxClose" aria-label="Close Lightbox">&times;</button>
+      <button class="lightbox-nav-btn lightbox-prev-btn" id="lightboxPrev" aria-label="Previous Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"></polyline></svg>
+      </button>
+      <div class="lightbox-image-container">
+        <img src="" alt="" id="lightboxImage" />
+      </div>
+      <button class="lightbox-nav-btn lightbox-next-btn" id="lightboxNext" aria-label="Next Image">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"></polyline></svg>
+      </button>
+      <div class="lightbox-caption-bar" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- 15. FACULTY SECTION -->
+  <section class="faculty-section" id="faculty">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Dedicated Educators</span>
+        <h2 class="section-title">Faculty Mentors</h2>
+        <p class="section-subtitle">
+          Experienced subject specialists committed to building student confidence and rigorous problem-solving skills.
+        </p>
+      </div>
+
+      <div class="faculty-grid">
+        <div class="faculty-card fade-in-element">
+          <div class="faculty-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=400&q=80" 
+              alt="Demo Faculty Physics Mentor" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Demo Faculty</h3>
+            <div class="faculty-role">Physics Mentor</div>
+            <p class="faculty-desc">Focuses on intuitive derivations, numerical problem solving, and CBSE/State Board conceptual foundation.</p>
+            <div class="faculty-footer">
+              <span class="demo-pill">DEMO PROFILE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card fade-in-element">
+          <div class="faculty-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" 
+              alt="Demo Faculty Chemistry Mentor" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Demo Faculty</h3>
+            <div class="faculty-role">Chemistry Mentor</div>
+            <p class="faculty-desc">Specializes in physical equations, organic mechanisms, and inorganic reaction revision frameworks.</p>
+            <div class="faculty-footer">
+              <span class="demo-pill">DEMO PROFILE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card fade-in-element">
+          <div class="faculty-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" 
+              alt="Demo Faculty Mathematics Mentor" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Demo Faculty</h3>
+            <div class="faculty-role">Mathematics Mentor</div>
+            <p class="faculty-desc">Trains students in speed calculus, coordinate geometry, algebra tricks, and step-by-step proofs.</p>
+            <div class="faculty-footer">
+              <span class="demo-pill">DEMO PROFILE</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="faculty-card fade-in-element">
+          <div class="faculty-img-wrapper">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80" 
+              alt="Demo Faculty NDA Mentor" 
+              loading="lazy" 
+            />
+          </div>
+          <div class="faculty-content">
+            <h3 class="faculty-name">Demo Faculty</h3>
+            <div class="faculty-role">NDA Mentor</div>
+            <p class="faculty-desc">Guides NDA aspirants on written exam strategy, General Ability tests, and systematic daily drills.</p>
+            <div class="faculty-footer">
+              <span class="demo-pill">DEMO PROFILE</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 16. ACADEMY STORY -->
+  <section class="story-timeline-section" id="story">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Our Evolution</span>
+        <h2 class="section-title">The Academy Story</h2>
+        <p class="section-subtitle">
+          How AVM evolved into a comprehensive coaching academy and quiet study hub in Kareli.
+        </p>
+      </div>
+
+      <div class="academy-story-timeline">
+        <!-- Item 1 -->
+        <div class="timeline-item fade-in-element">
+          <div class="timeline-content-box">
+            <h3 class="timeline-title">The Idea</h3>
+            <p class="timeline-desc">Recognizing that students in Kareli needed a high-caliber focused learning environment free from home disruptions.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-img-box">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=500&q=80" alt="The Idea behind AVM" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item fade-in-element">
+          <div class="timeline-content-box">
+            <h3 class="timeline-title">The Learning Space</h3>
+            <p class="timeline-desc">Establishing modern classrooms coupled with both AC and Non-AC self-study halls, high-speed Wi-Fi, and reference libraries.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-img-box">
+            <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=500&q=80" alt="The Learning Space" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item fade-in-element">
+          <div class="timeline-content-box">
+            <h3 class="timeline-title">The Student Community</h3>
+            <p class="timeline-desc">A disciplined network of students actively preparing for Class 11-12 Boards, NDA entries, and state/national competitive examinations.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-img-box">
+            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=500&q=80" alt="The Student Community" loading="lazy" />
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div class="timeline-item fade-in-element">
+          <div class="timeline-content-box">
+            <h3 class="timeline-title">The Vision</h3>
+            <p class="timeline-desc">Empowering every ambitious student in Kareli to study with deeper focus, consistency, and confidence to achieve their goals.</p>
+          </div>
+          <div class="timeline-dot"></div>
+          <div class="timeline-img-box">
+            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=500&q=80" alt="The Vision" loading="lazy" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 17. FAQ ACCORDION (12 Questions) -->
+  <section class="faq-section" id="faq">
+    <div class="section-container">
+      <div class="section-header fade-in-element">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find clear answers regarding admissions, library memberships, timings, and facilities.
+        </p>
+      </div>
+
+      <div class="faq-container-narrow">
+        <div class="faq-accordion">
+          <!-- Q1 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>1. Which classes do you teach?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>We provide comprehensive academic coaching for Class 11 and Class 12 students, alongside specialized preparation batches for NDA and general competitive exam aptitude foundation.</p>
+            </div>
+          </div>
+
+          <!-- Q2 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>2. What subjects are available?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Our core academic focus covers Physics, Chemistry, and Mathematics (PCM), along with General Knowledge, English, and Mental Aptitude for competitive aspirants.</p>
+            </div>
+          </div>
+
+          <!-- Q3 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>3. Do you provide NDA preparation?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we have dedicated NDA batches covering both Mathematics and the General Ability Test (GAT) paper, supplemented with regular mock practice series.</p>
+            </div>
+          </div>
+
+          <!-- Q4 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>4. Do you provide competitive exam guidance?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes. We offer strategic mentorship, aptitude foundation building, syllabus roadmaps, and self-study spaces for various state and national level examinations.</p>
+            </div>
+          </div>
+
+          <!-- Q5 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>5. Can I use the library only for self-study?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Absolutely. You can enroll purely for our AC or Non-AC study hall memberships without enrolling in academic coaching classes.</p>
+            </div>
+          </div>
+
+          <!-- Q6 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>6. Is AC study space available?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we have a fully air-conditioned, climate-controlled study hall equipped with ergonomic chairs, charging points, and sound insulation.</p>
+            </div>
+          </div>
+
+          <!-- Q7 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>7. Is Non-AC study space available?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, we offer an affordable, naturally ventilated Non-AC reading hall with dedicated private desks and silent atmosphere.</p>
+            </div>
+          </div>
+
+          <!-- Q8 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>8. Is Wi-Fi available?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes, high-speed Wi-Fi connectivity is provided for all enrolled students to access online video lectures, test portals, and digital notes.</p>
+            </div>
+          </div>
+
+          <!-- Q9 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>9. How can I book a seat?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>You can click on the "Book a Seat" button anywhere on this website to submit an online enquiry, or visit our centre directly in Kareli.</p>
+            </div>
+          </div>
+
+          <!-- Q10 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>10. Can I visit before joining?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Yes! Prospective students and parents are always welcome to take a guided walk through our classrooms and study halls during office hours.</p>
+            </div>
+          </div>
+
+          <!-- Q11 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>11. How can parents contact the academy?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>Parents can call our official contact number, message on WhatsApp, or schedule an in-person meeting with our faculty counsellors.</p>
+            </div>
+          </div>
+
+          <!-- Q12 -->
+          <div class="faq-item fade-in-element">
+            <button class="faq-question-btn" type="button">
+              <span>12. What study durations are available?</span>
+              <span class="faq-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg></span>
+            </button>
+            <div class="faq-answer">
+              <p>We offer flexible library passes including Daily study passes, Weekly plans, and full Monthly memberships with morning to late evening slot options.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 18. CONTACT SECTION -->
+  <section class="contact-section" id="contact">
+    <div class="section-container">
+      <div class="contact-grid">
+        <!-- Contact Info -->
+        <div class="contact-info-panel fade-in-element">
+          <span class="section-tag" style="background: rgba(245, 158, 11, 0.2); color: #FEF3C7;">Connect With Us</span>
+          <h2 class="contact-info-title">Let's Start Your Preparation</h2>
+          <p class="contact-info-desc">
+            Visit AVM Academy & Library in Kareli or reach out via call/WhatsApp to inquire about batches and seat availability.
+          </p>
+
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Location</div>
+                <div class="contact-detail-value">AVM Academy & Library, Kareli, Madhya Pradesh</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Phone</div>
+                <div class="contact-detail-value">+91 98765 43210 (Demo)</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Email</div>
+                <div class="contact-detail-value">contact@avmacademykareli.com (Demo)</div>
+              </div>
+            </div>
+
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+              </div>
+              <div>
+                <div class="contact-detail-label">Hours</div>
+                <div class="contact-detail-value">Study Hall: 6:00 AM – 10:00 PM | Office: 8:00 AM – 7:00 PM</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-buttons-group">
+            <a href="tel:+919876543210" class="btn btn-call js-phone-link">Call Now</a>
+            <a href="#" class="btn btn-whatsapp js-whatsapp-link">WhatsApp</a>
+            <button class="btn btn-outline-white js-maps-link">Get Directions</button>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-panel fade-in-element">
+          <h3 class="form-header-title">Have A Question?</h3>
+          <p class="form-header-subtitle">Send us an instant enquiry and our team will get in touch with you.</p>
+
+          <form id="contactPageForm">
+            <div class="form-group">
+              <label for="contactName" class="form-label">Full Name *</label>
+              <input type="text" id="contactName" class="form-control" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactMobile" class="form-label">Mobile Number *</label>
+              <input type="tel" id="contactMobile" class="form-control" placeholder="Enter 10-digit mobile number" required />
+            </div>
+
+            <div class="form-group">
+              <label for="contactInterest" class="form-label">Interested In *</label>
+              <select id="contactInterest" class="form-control" required>
+                <option value="">Select an option</option>
+                <option value="Class 11 PCM">Class 11 PCM Coaching</option>
+                <option value="Class 12 PCM">Class 12 PCM Coaching</option>
+                <option value="NDA Preparation">NDA Preparation Batch</option>
+                <option value="AC Study Hall">AC Study Hall Seat</option>
+                <option value="Non-AC Study Hall">Non-AC Study Hall Seat</option>
+                <option value="Competitive Exam Guidance">Competitive Exam Guidance</option>
+                <option value="Other Query">General Academic Enquiry</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Message</label>
+              <textarea id="contactMessage" class="form-control" placeholder="Write your question or requirements..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-lg">Send Enquiry</button>
+
+            <div id="contactFormAlert" class="form-alert-msg"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 19. FINAL CTA -->
+  <section class="final-cta-section" id="final-cta">
+    <div class="section-container">
+      <div class="final-cta-content fade-in-element">
+        <h2 class="final-cta-title">Your Goal Deserves A Serious Start.</h2>
+        <p class="final-cta-text">
+          Whether you're preparing for:<br>
+          <strong>PCM • NDA • Competitive Exams • Self Study</strong><br>
+          AVM Academy & Library gives you a focused place to begin.
+        </p>
+        <div class="final-cta-buttons">
+          <button class="btn btn-accent btn-lg js-open-enquiry-modal" data-course="General Enquiry">
+            Enquire Now
+          </button>
+          <button class="btn btn-outline-white btn-lg js-open-seat-modal">
+            Book A Study Seat
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 20. FOOTER -->
+  <footer class="footer">
+    <div class="section-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-brand-title">AVM Academy & Library</div>
+          <div class="footer-tagline">Kareli, Madhya Pradesh</div>
+          <p class="footer-desc">
+            Empowering students with structured PCM coaching, NDA mentorship, and silent AC & Non-AC study halls for competitive exam success.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Facebook (Demo)" onclick="alert('Demo Social Link'); return false;">FB</a>
+            <a href="#" class="social-btn" aria-label="Instagram (Demo)" onclick="alert('Demo Social Link'); return false;">IG</a>
+            <a href="#" class="social-btn" aria-label="YouTube (Demo)" onclick="alert('Demo Social Link'); return false;">YT</a>
+            <a href="#" class="social-btn js-whatsapp-link" aria-label="WhatsApp">WA</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Quick Links</h4>
+          <ul class="footer-links-list">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About Academy</a></li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#library">Study Hall</a></li>
+            <li><a href="#facilities">Facilities</a></li>
+            <li><a href="#results">Achievements</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Programs</h4>
+          <ul class="footer-links-list">
+            <li><a href="#courses">Class 11 PCM</a></li>
+            <li><a href="#courses">Class 12 PCM</a></li>
+            <li><a href="#courses">NDA Preparation</a></li>
+            <li><a href="#library">AC Study Hall</a></li>
+            <li><a href="#library">Non-AC Study Space</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Reach Us</h4>
+          <p style="color: #94A3B8; font-size: 0.875rem; margin-bottom: 0.75rem;">
+            AVM Academy & Library<br>
+            Kareli, Narsinghpur District<br>
+            Madhya Pradesh
+          </p>
+          <p style="color: #CBD5E1; font-weight: 600; font-size: 0.875rem; margin-bottom: 0.5rem;">
+            Phone: +91 98765 43210
+          </p>
+          <p style="color: #94A3B8; font-size: 0.8125rem;">
+            Open 7 Days: 6:00 AM – 10:00 PM
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 AVM Academy & Library, Kareli. All rights reserved.</div>
+        <div>
+          <span class="demo-pill">DEMO WEBSITE</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL 1: SEAT BOOKING MODAL (Full functional demo)
+       ========================================================================== -->
+  <div class="modal-overlay" id="seatBookingModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Book a Study Seat</h3>
+        <button class="modal-close-btn js-modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <!-- Form View -->
+        <form id="seatBookingForm">
+          <div class="form-group">
+            <label for="seatStudentName" class="form-label">Student Name *</label>
+            <input type="text" id="seatStudentName" class="form-control" placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="seatMobileNumber" class="form-label">Mobile Number *</label>
+            <input type="tel" id="seatMobileNumber" class="form-control" placeholder="Enter 10-digit phone number" required />
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="seatCategorySelect" class="form-label">Student Category *</label>
+              <select id="seatCategorySelect" class="form-control" required>
+                <option value="">Select Category</option>
+                <option value="Class 11">Class 11</option>
+                <option value="Class 12">Class 12</option>
+                <option value="NDA Aspirant">NDA Aspirant</option>
+                <option value="Competitive Exam Aspirant">Competitive Exam Aspirant</option>
+                <option value="Self Study">Self Study</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="seatHallSelect" class="form-label">Study Hall *</label>
+              <select id="seatHallSelect" class="form-control" required>
+                <option value="AC">AC Study Hall</option>
+                <option value="Non-AC">Non-AC Study Hall</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="seatDurationSelect" class="form-label">Duration *</label>
+              <select id="seatDurationSelect" class="form-control" required>
+                <option value="Daily">Daily</option>
+                <option value="Weekly">Weekly</option>
+                <option value="Monthly" selected>Monthly</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="seatStartDate" class="form-label">Start Date *</label>
+              <input type="date" id="seatStartDate" class="form-control" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="seatMessage" class="form-label">Special Requirements / Notes</label>
+            <textarea id="seatMessage" class="form-control" placeholder="E.g. preferred morning or evening timing slot..." style="min-height: 80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-full btn-lg" id="submitSeatEnquiryBtn">
+            Submit Seat Enquiry
+          </button>
+        </form>
+
+        <!-- Success Screen -->
+        <div id="seatSuccessView" class="modal-success-state">
+          <div class="modal-success-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 class="modal-success-title">Enquiry Received!</h3>
+          <p class="modal-success-message">
+            Thank you, <strong id="seatSuccessName">Student</strong>. Your demo seat enquiry has been recorded successfully.<br><br>
+            AVM Academy & Library will contact you shortly to confirm your reserved seat slot.
+          </p>
+          <div class="modal-success-actions">
+            <button class="btn btn-outline js-modal-close">Close</button>
+            <a href="#" class="btn btn-whatsapp" id="seatWhatsAppShareBtn" target="_blank" rel="noopener noreferrer">
+              Send on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       MODAL 2: COURSE & GENERAL ENQUIRY MODAL (Pre-fillable)
+       ========================================================================== -->
+  <div class="modal-overlay" id="enquiryModal" role="dialog" aria-modal="true">
+    <div class="modal-container">
+      <div class="modal-header">
+        <h3 class="modal-title">Course & Admission Enquiry</h3>
+        <button class="modal-close-btn js-modal-close" aria-label="Close Modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <form id="enquiryForm">
+          <div class="form-group">
+            <label for="enquiryName" class="form-label">Your Name *</label>
+            <input type="text" id="enquiryName" class="form-control" placeholder="Enter student / parent name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryMobile" class="form-label">Mobile Number *</label>
+            <input type="tel" id="enquiryMobile" class="form-control" placeholder="Enter 10-digit mobile number" required />
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryCourseSelect" class="form-label">Program of Interest *</label>
+            <select id="enquiryCourseSelect" class="form-control" required>
+              <option value="Class 11 PCM">Class 11 PCM Coaching</option>
+              <option value="Class 12 PCM">Class 12 PCM Coaching</option>
+              <option value="NDA Preparation">NDA Preparation Batch</option>
+              <option value="Competitive Exam Guidance">Competitive Exam Guidance</option>
+              <option value="AC Study Hall">AC Study Hall Seat</option>
+              <option value="Non-AC Study Hall">Non-AC Study Hall Seat</option>
+              <option value="General Enquiry">General Enquiry / Visit</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="enquiryNotes" class="form-label">Questions / Remarks</label>
+            <textarea id="enquiryNotes" class="form-control" placeholder="Tell us what you would like to know (batch timings, fees, demo classes)..." style="min-height: 80px;"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-full btn-lg">Submit Course Enquiry</button>
+        </form>
+
+        <div id="enquirySuccessView" class="modal-success-state">
+          <div class="modal-success-icon">
+            <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
+          </div>
+          <h3 class="modal-success-title">Enquiry Received!</h3>
+          <p class="modal-success-message">
+            Thank you, <strong id="enquirySuccessName">Student</strong>. Your demo course enquiry has been submitted.<br><br>
+            AVM Academy & Library counsellors will call you back shortly.
+          </p>
+          <div class="modal-success-actions">
+            <button class="btn btn-outline js-modal-close">Close</button>
+            <a href="#" class="btn btn-whatsapp" id="enquiryWhatsAppShareBtn" target="_blank" rel="noopener noreferrer">
+              Send on WhatsApp
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOATING WHATSAPP BUTTON (Desktop) -->
+  <a href="#" class="floating-whatsapp-btn js-whatsapp-link" id="desktopFloatingWhatsApp" aria-label="Chat with AVM Academy on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="whatsapp-tooltip">Chat with AVM</span>
+  </a>
+
+  <!-- FLOATING BACK TO TOP BUTTON -->
+  <button class="back-to-top-btn" id="backToTopBtn" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"></polyline></svg>
+  </button>
+
+  <!-- MOBILE FIXED BOTTOM ACTION BAR -->
+  <div class="mobile-bottom-bar" id="mobileBottomBar">
+    <div class="mobile-bottom-actions">
+      <a href="tel:+919876543210" class="btn btn-call btn-sm js-phone-link" id="mobileCallBtn">
+        ☎ Call
+      </a>
+      <a href="#" class="btn btn-whatsapp btn-sm js-whatsapp-link" id="mobileWhatsAppBtn">
+        WhatsApp
+      </a>
+      <button class="btn btn-accent btn-sm js-open-seat-modal" id="mobileBookBtn">
+        Book Seat
+      </button>
+    </div>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>

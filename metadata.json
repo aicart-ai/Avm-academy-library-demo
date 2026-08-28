@@ -1,0 +1,6 @@
+{
+  "name": "AVM Academy & Library, Kareli",
+  "description": "Interactive demo website for AVM Academy & Library in Kareli with PCM coaching, NDA prep, AC/Non-AC study halls, seat reservation modal, interactive gallery, and student testimonials.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
